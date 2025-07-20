@@ -1,0 +1,188 @@
+/* ========== GENERAL STYLES ========== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #fef7f7;
+}
+
+h2 {
+    color: #7c156e;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ========== HEADER ========== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #821770;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+/* Header Title and Contact */
+.header-info {
+    text-align: right;
+}
+
+.header-info i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.header-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffdbfa;
+    text-decoration: underline;
+    font-weight: bold;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #ccc;
+}
+
+/* ========== MAIN LAYOUT ========== */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+/* ========== SECTIONS ========== */
+section {
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    padding: 50px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== ABOUT SECTION ========== */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* ========== SKILLS SECTION ========== */
+#skills {
+    text-align: left;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#skills li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#skills li img {
+    width: 30px;
+    height: 30px;
+}
+
+/* ========== RECOMMENDATIONS SECTION ========== */
+.recommendation-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recommendation {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* ========== RECOMMENDATION FORM ========== */
+#recommendation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#recommendation-input {
+    width: 100%;
+    max-width: 700px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#recommendation-button {
+    background-color: #dd22bb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#recommendation-button:hover {
+    background-color: #080e48;
+}
